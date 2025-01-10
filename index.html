@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche Automotive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+    
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      background-color: #f4c200;
+      color: #000;
+    }
+    
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.motor1.com/images/mgl/YAgVGq/s2/2024-porsche-cayenne-turbo-e-hybrid.webp') no-repeat center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+    
+    .models, .about, .contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .model-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .card h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #000;
+    }
+    
+    .card p {
+      color: #555;
+      font-size: 1rem;
+    }
+    
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    
+    a {
+      color: #f4c200;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Porsche Automotive</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Experience the Excellence</h2>
+      <p>Discover the latest Porsche models, designed for ultimate performance and luxury.</p>
+    </section>
+
+    <section id="models" class="models">
+      <h2>Porsche Models</h2>
+      <div class="model-cards">
+        <div class="card">
+            <img src="https://cdn.motor1.com/images/mgl/wlqrKL/s2/2025-porsche-911-carrera-t-cabriolet-first-drive.webp" alt="Porsche 911" alt="Porsche 911">
+            <h3>Porsche 911</h3>
+          <p>The iconic sports car with unbeatable performance.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn.motor1.com/images/mgl/y2GlxY/s2/porsche-taycan-turbo-gt.webp" alt="Porsche Model 2">
+          <h3>Porsche Taycan</h3>
+          <p>Pure electric luxury with breathtaking acceleration.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn.motor1.com/images/mgl/YAgVGq/s2/2024-porsche-cayenne-turbo-e-hybrid.webp" alt="Porsche Model 3">
+          <h3>Porsche Cayenne</h3>
+          <p>The ultimate SUV for versatility and style.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Porsche</h2>
+      <p>Porsche is known for producing high-performance vehicles with a perfect balance of luxury and speed. With decades of innovation, Porsche stands as a symbol of excellence in the automotive world.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>For inquiries, please reach out at <a href="mailto:info@porsche.com">info@porsche.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Porsche Automotive. All rights reserved.</p>
+  </footer>
+</body>
+</html>
